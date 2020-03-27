@@ -10,11 +10,15 @@
 	"homepage": "http://prithvi1972.github.io/athena",
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build && react-snapshot",
+		"build": "react-scripts build",
+		"postbuild": "react-snap",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
+	},
+	"reactSnap": {
+		"inlineCss": true
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -22,8 +26,8 @@
 	"devDependencies": {
 		"gh-pages": "^2.0.1",
 		"prettier": "1.18.2",
-		"react-snapshot": "^1.3.0",
-		"react-router-dom": "^5.1.2"
+		"react-router-dom": "^5.1.2",
+		"react-snap": "^1.23.0"
 	},
 	"browserslist": {
 		"production": [
