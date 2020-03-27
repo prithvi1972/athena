@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/athena/static/css/main.53e0e2e3.chunk.css",
-    "main.js": "/athena/static/js/main.30877ea5.chunk.js",
-    "main.js.map": "/athena/static/js/main.30877ea5.chunk.js.map",
+    "main.js": "/athena/static/js/main.24c5464e.chunk.js",
+    "main.js.map": "/athena/static/js/main.24c5464e.chunk.js.map",
     "runtime-main.js": "/athena/static/js/runtime-main.4febf3d4.js",
     "runtime-main.js.map": "/athena/static/js/runtime-main.4febf3d4.js.map",
-    "static/js/2.260926c2.chunk.js": "/athena/static/js/2.260926c2.chunk.js",
-    "static/js/2.260926c2.chunk.js.map": "/athena/static/js/2.260926c2.chunk.js.map",
+    "static/js/2.de457c1b.chunk.js": "/athena/static/js/2.de457c1b.chunk.js",
+    "static/js/2.de457c1b.chunk.js.map": "/athena/static/js/2.de457c1b.chunk.js.map",
     "index.html": "/athena/index.html",
-    "precache-manifest.e545f8e0ebe59ebb4b3a12364bdd504f.js": "/athena/precache-manifest.e545f8e0ebe59ebb4b3a12364bdd504f.js",
+    "precache-manifest.2bedac114a979b70222db2b86761f56c.js": "/athena/precache-manifest.2bedac114a979b70222db2b86761f56c.js",
     "service-worker.js": "/athena/service-worker.js",
     "static/css/main.53e0e2e3.chunk.css.map": "/athena/static/css/main.53e0e2e3.chunk.css.map",
-    "static/js/2.260926c2.chunk.js.LICENSE.txt": "/athena/static/js/2.260926c2.chunk.js.LICENSE.txt"
+    "static/js/2.de457c1b.chunk.js.LICENSE.txt": "/athena/static/js/2.de457c1b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4febf3d4.js",
-    "static/js/2.260926c2.chunk.js",
+    "static/js/2.de457c1b.chunk.js",
     "static/css/main.53e0e2e3.chunk.css",
-    "static/js/main.30877ea5.chunk.js"
+    "static/js/main.24c5464e.chunk.js"
   ]
 }
