@@ -1,9 +1,26 @@
-import React from 'react';
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
+import { Link } from 'react-router-dom';
+
+import { Seperator } from '../../components/seperator/index.js';
+
+import { homeWrapper, introHeading, introSubHeading, homeLink } from './style.js';
 
 export function Home() {
 	return (
-		<>
-			<div>Home component</div>
-		</>
+		<div css={homeWrapper}>
+			<h1 css={introHeading}>Hi, I am Sannya Singal</h1>
+			<Seperator color="transparent" />
+			<h2 css={introSubHeading}>
+				Backend Software Engineer at <a href="https://magicpin.in/">Magicpin</a>
+			</h2>
+			<Seperator color="transparent" />
+			<Link to="/cv" css={homeLink}>
+				Download CV
+			</Link>
+			<Link to="/portfolio" css={homeLink}>
+				Browse Portfolio
+			</Link>
+		</div>
 	);
 }
