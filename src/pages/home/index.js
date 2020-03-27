@@ -1,11 +1,9 @@
 import React from 'react';
 
-function Home() {
+export function Home() {
 	return (
 		<>
-			<div>Hello World</div>
+			<div>Home component</div>
 		</>
 	);
 }
-
-export default Home;

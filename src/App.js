@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Home from './pages/home';
+import { Base } from './components/base';
 import { StoreContext } from './store';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
 	const [store, setStore] = useState({
@@ -10,7 +11,9 @@ function App() {
 
 	return (
 		<StoreContext.Provider value={{ store, setStore }}>
-			<Home />
+			<Router>
+				<Base />
+			</Router>
 		</StoreContext.Provider>
 	);
 }
