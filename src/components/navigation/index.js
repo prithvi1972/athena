@@ -8,7 +8,6 @@ import config from '../../config/profile';
 export function Navigation() {
 	const history = useHistory(),
 		isHomePage = history.location.pathname === '/';
-	console.log(isHomePage);
 	return (
 		<div css={navigationStyle}>
 			<div css={navAvatarWrap}>
