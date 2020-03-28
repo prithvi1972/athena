@@ -39,6 +39,6 @@ export const navigationStyle = css`
 		padding: 5px;
 		text-align: center;
 		border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
-		transition: opacity 0.25s ease-in-out;
+		transition: opacity 0.25s;
 		opacity: ${show ? '1' : '0'};
 	`;
