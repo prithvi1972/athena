@@ -1,13 +1,20 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import { Link } from 'react-router-dom';
-import { navigationStyle, linkStyle, navAvatar } from './style';
+import { Link, useHistory } from 'react-router-dom';
+import { navigationStyle, linkStyle, navAvatar, navAvatarWrap, navName } from './style';
 import { SocialIcons } from '../socialIcons';
+import config from '../../config/profile';
 
 export function Navigation() {
+	const history = useHistory(),
+		isHomePage = history.location.pathname === '/';
+	console.log(isHomePage);
 	return (
 		<div css={navigationStyle}>
-			<div css={navAvatar} />
+			<div css={navAvatarWrap}>
+				<div css={navAvatar} />
+				<h1 css={navName(!isHomePage)}>{config.meta.name}</h1>
+			</div>
 			<Link to="/" css={linkStyle}>
 				Home
 			</Link>

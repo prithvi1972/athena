@@ -2,6 +2,7 @@
 import { jsx } from '@emotion/core';
 import { Link } from 'react-router-dom';
 
+import config from '../../config/profile.js';
 import { Seperator } from '../../components/seperator/index.js';
 
 import { homeWrapper, introHeading, introSubHeading, homeLink } from './style.js';
@@ -9,10 +10,10 @@ import { homeWrapper, introHeading, introSubHeading, homeLink } from './style.js
 export function Home() {
 	return (
 		<div css={homeWrapper}>
-			<h1 css={introHeading}>Hi, I am Sannya Singal</h1>
+			<h1 css={introHeading}>Hi, I am {config.meta.name}</h1>
 			<Seperator color="transparent" />
 			<h2 css={introSubHeading}>
-				Backend Software Engineer at <a href="https://magicpin.in/">Magicpin</a>
+				{config.meta.role} at <a href={config.company.url}>{config.company.name}</a>
 			</h2>
 			<Seperator color="transparent" />
 			<Link to="/cv" css={homeLink}>
