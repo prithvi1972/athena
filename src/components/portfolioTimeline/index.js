@@ -8,8 +8,8 @@ import { timelineWrap } from './style';
 export function PortfolioTimeline() {
 	return (
 		<div css={timelineWrap}>
-			{portfolio.timelineItems.map(item => (
-				<PortfolioItem {...item} />
+			{portfolio.timelineItems.map((item, i) => (
+				<PortfolioItem {...item} i={i} />
 			))}
 		</div>
 	);

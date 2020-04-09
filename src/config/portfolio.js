@@ -7,9 +7,13 @@ export default {
 			type: 'job',
 			data: {
 				name: 'Magicpin',
-				time: 'Jan 2019 - Present',
-				shortDescription: 'Tech startup to revolutionize marketing of offline retail businesses',
-				description: (
+				time: {
+					start: 'Jan 2019',
+					end: 'Present',
+				},
+				subHeading: 'Backend Software Developer',
+				technologies: ['python', 'golang', 'kafka', 'redis', 'neo4j'],
+				shortDescription: (
 					<div>
 						Solved problems at the merchant resulting in 90 percent efficiency which was 40 percent earlier
 						<ul>
@@ -22,6 +26,7 @@ export default {
 						</ul>
 					</div>
 				),
+				knowMore: false,
 			},
 		},
 	],

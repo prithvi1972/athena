@@ -2,10 +2,11 @@
 import { jsx } from '@emotion/core';
 import { Link } from 'react-router-dom';
 
-import config from '../../config/profile.js';
-import { Seperator } from '../../components/seperator/index.js';
+import config from '../../config/profile';
+import { Seperator } from '../../components/seperator/index';
 
-import { homeWrapper, introHeading, introSubHeading, homeLink } from './style.js';
+import { homeWrapper, introHeading, introSubHeading } from './style';
+import { button } from '../../theme/style';
 
 export function Home() {
 	return (
@@ -16,10 +17,10 @@ export function Home() {
 				{config.meta.role} at <a href={config.company.url}>{config.company.name}</a>
 			</h2>
 			<Seperator color="transparent" />
-			<Link to="/cv" css={homeLink}>
+			<Link to="/cv" css={button}>
 				Download CV
 			</Link>
-			<Link to="/portfolio" css={homeLink}>
+			<Link to="/portfolio" css={button}>
 				Browse Portfolio
 			</Link>
 		</div>

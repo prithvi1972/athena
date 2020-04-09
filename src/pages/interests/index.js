@@ -1,17 +1,13 @@
-import React from 'react';
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
+
+import { interestsWrapper, interestsH1, interestsH2 } from './style.js';
 
 export function Interests() {
 	return (
-		<div>
-			<h1
-				style={{
-					backgroundColor: '#333',
-					padding: '10px',
-					color: '#fff',
-				}}
-			>
-				Interests component will come here
-			</h1>
+		<div css={interestsWrapper}>
+			<h1 css={interestsH1}>Interests</h1>
+			<h2 css={interestsH2}>Things I love to do...</h2>
 		</div>
 	);
 }

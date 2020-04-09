@@ -1,10 +1,11 @@
 import { css } from '@emotion/core';
-import config from '../../config/profile.js';
+import profileConfig from '../../config/profile';
+import themeConfig from '../../config/theme';
 import fs from '../../styleguide/font/size';
 
 export const navigationStyle = css`
 		flex: 250px 0 0;
-		background-color: rgba(90, 0, 0, 0.8);
+		background-color: ${themeConfig.navigation.overlay};
 		background-size: 16px 16px;
 		display: flex;
 		flex-direction: column;
@@ -25,7 +26,7 @@ export const navigationStyle = css`
 		width: 180px;
 		height: 180px;
 		background-color: rgba(0, 0, 0, 0.3);
-		background-image: url(${config.meta.image});
+		background-image: url(${profileConfig.meta.image});
 		background-size: 180px;
 		border: 3px solid white;
 		border-radius: 50%;
