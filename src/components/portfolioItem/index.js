@@ -38,8 +38,7 @@ export function PortfolioItem({ type, data: { time, name, subHeading, shortDescr
 				{name && <h3 css={itemName}>{name}</h3>}
 				{subHeading && <h4 css={itemShortDescription}>{subHeading}</h4>}
 				{Array.isArray(technologies) &&
-				technologies.map(technology => <div css={technologyStyle}>{technology}</div>)
-				}
+					technologies.map(technology => <div css={technologyStyle}>{technology}</div>)}
 				{shortDescription && <div css={itemDescription}>{shortDescription}</div>}
 				{knowMore && <div css={buttonDark}>Know More</div>}
 			</div>

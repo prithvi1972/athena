@@ -13,7 +13,7 @@ export const interestsWrapper = css`
 	interestsH1 = css`
 		font-weight: normal;
 		text-transform: uppercase;
-		margin: 0;
+		margin: 0 0 20px;
 		font-size: ${fs.xxlarge};
 	`,
 	interestsH2 = css`
