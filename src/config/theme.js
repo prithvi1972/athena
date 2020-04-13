@@ -18,4 +18,7 @@ export default {
 	interests: {
 		overlay: 'rgba(230, 230, 230, 0.96)',
 	},
+	contact: {
+		overlay: 'rgba(30, 30, 30, 0.9)',
+	},
 };

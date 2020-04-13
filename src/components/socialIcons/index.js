@@ -6,11 +6,19 @@ import { iconWrap, socialIcon } from './style';
 import { ReactComponent as FacebookIcon } from '../../static/img/social/facebook.svg';
 import { ReactComponent as LinkedinIcon } from '../../static/img/social/linkedin.svg';
 
+export function Facebook() {
+	return <FacebookIcon css={socialIcon} />;
+}
+
+export function LinkedIn() {
+	return <LinkedinIcon css={socialIcon} />;
+}
+
 export function SocialIcons() {
 	return (
 		<div css={iconWrap}>
-			<FacebookIcon css={socialIcon} />
-			<LinkedinIcon css={socialIcon} />
+			<Facebook />
+			<LinkedIn />
 		</div>
 	);
 }

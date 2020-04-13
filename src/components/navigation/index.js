@@ -7,7 +7,8 @@ import config from '../../config/profile';
 
 export function Navigation() {
 	const history = useHistory(),
-		isHomePage = history.location.pathname === '/';
+		isHomePage = history.location.pathname === '/',
+		isContactPage = history.location.pathname === '/contact';
 	return (
 		<div css={navigationStyle}>
 			<div css={navAvatarWrap}>
@@ -26,7 +27,7 @@ export function Navigation() {
 			<Link to="/contact" css={linkStyle}>
 				Contact
 			</Link>
-			<SocialIcons />
+			{!isContactPage && <SocialIcons />}
 		</div>
 	);
 }
